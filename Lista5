@@ -1,0 +1,64 @@
+#QUESTÃO 1
+matriz=[]
+impares=0
+q_linhas=int(input())
+q_colunas=int(input())
+for i in range(q_linhas):
+    lista=[]
+    for j in range(q_colunas):
+        x=int(input())
+        lista.append(x)
+        if x%2 != 0:
+            impares +=1
+     matriz.append(lista)
+print(matriz)
+print(impares)
+
+----------------------------------------------------------------------------------------------------------------------------------------
+#QUESTÃO 2
+matriz=[]
+maior=None
+q_linhas=int(input('Quantas linhas terá a sua matriz? '))
+q_colunas=int(input('Quantas colunas terá a sua matriz? '))
+for k in range(q_linhas):
+    lista=[]
+    for i in range(q_colunas):
+        x=int(input('Digite o próximo número da matriz: '))
+        lista.append(x)
+        if maior==None:
+            maior=x
+        if maior<x:
+            maior=x
+    matriz.append(lista)
+print (matriz)
+print (maior)
+----------------------------------------------------------------------------------------------------------------------------------------
+#QUESTÃO 3
+matriz=[]
+maior=None
+menor=None 
+q_colunas=int(input('Quantas colunas? '))
+q_linhas=int(input('Quantas linhas? '))
+for i in range (q_linhas):
+  lista=[]
+  for i in range(q_colunas):
+    print(f'Digite o elemento {i+1} :')
+    x=int(input())
+    lista.append(x)
+    if maior==None and menor == None:
+      maior=x
+      menor=x
+    if maior<x:
+        maior=x
+    elif menor>x:
+        menor=x
+    
+  matriz.append(lista)
+print (matriz)
+print (f'maior: {maior}')
+print (f'menor: {menor}')
+----------------------------------------------------------------------------------------------------------------------------------------
+#QUESTÃO 4
+
+
+  
